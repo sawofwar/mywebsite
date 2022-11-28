@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.side-bar {
+  position: absolute;
+  width: 15%;
+  left: 2%;
+  top: 12%;
+  scale: 80%;
+  height: 15%;
+}
+
+.side-bar ul {
+  margin-left: 14%;
+}
+
+.side-bar li {
+  list-style: none;
+}
+
+.side-bar a {
+  text-decoration: none;
+}
+
+h2 {
+  margin-bottom: 20px;
+  margin-left: 14%;
+}
+
+.fa-solid {
+  color: orangered;
+  position: absolute;
+  left: -5%;
+}
+
+h3 {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-left: 14%;
+  color: #555;
+}
+
+.hidden {
+  display: none;
+}
+
+#folder-button {
+  transition: 0.1s;
+}
+
+#folder-button:hover {
+  opacity: 20%;
+  scale: 120%;
+}
+
+#folder-button:active {
+  opacity: 5%;
+  scale: 200%;
+}
+
+.orangered {
+  color: orangered;
+  transition: 0.2s;
+}
