@@ -53,3 +53,20 @@ h1 {
   color: orangered;
   border-color: orangered;
 }
+
+@media (max-width: 500px) {
+  * {
+    overflow: hidden;
+  }
+
+  .header-bar {
+    height: rem;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    /* width: 100vw; */
+    overflow: hidden;
+    min-width: 100vw;
+    min-width: -webkit-fill-available;
+    margin: 0;
+  }
+}

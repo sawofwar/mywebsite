@@ -65,3 +65,45 @@ h3 {
   color: orangered;
   transition: 0.2s;
 }
+
+@media (max-width: 500px) {
+  .my-projects {
+    display: none;
+  }
+
+  .side-bar {
+    /* display: block; */
+    position: static;
+    width: 60vw;
+    display: inline-block;
+    padding: 0.1rem;
+    margin-top: 0.7rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .fa-solid {
+    position: static;
+  }
+
+  .side-bar h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .side-bar a {
+    color: orangered;
+  }
+
+  .udemy {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+  }
+
+  .side-bar li {
+    padding: 0 1.5rem;
+  }
+}

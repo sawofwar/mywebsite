@@ -134,3 +134,23 @@ p {
   display: inline-block;
   padding: 5px;
 }
+
+@media (max-width: 500px) {
+  .section-one p,
+  .section-two p {
+    padding: 0 1.5rem;
+    width: 100vw;
+  }
+
+  .fav-bands {
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    scale: 90%;
+  }
+
+  .section-one {
+    margin: 0;
+  }
+}
