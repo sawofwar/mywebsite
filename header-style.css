@@ -10,7 +10,6 @@ header {
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* text-align: center; */
 }
 
 h1 {
@@ -18,18 +17,38 @@ h1 {
   font-size: 30px;
 }
 
+h1 a {
+  transition: 0.15s ease;
+  /* border: 1px solid transparent; */
+}
+
+h1 a:link {
+  text-decoration: none;
+  color: white;
+}
+
+h1 a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+h1 a:hover {
+  color: orangered;
+  /* border: 1px solid orangered; */
+}
+
 .header-bar {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: black;
+  background-color: #000000;
   height: 60px;
   width: 100%;
 }
 
 .logo span {
-  color: orangered;
+  color: #fca311;
 }
 
 .header-bar ul {

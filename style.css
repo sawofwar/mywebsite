@@ -61,7 +61,7 @@ p {
 .section-one,
 .section-two {
   display: inline-block;
-  border-bottom: 2px solid;
+  /* border-bottom: 2px solid; */
   text-align: justify;
   font-size: 14px;
 }
@@ -72,13 +72,13 @@ p {
 }
 
 .section-one p:first-child {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .section-two {
   border: none;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .section-two p {
