@@ -81,5 +81,21 @@ h1 a:hover {
     min-width: 100vw;
     min-width: -webkit-fill-available;
     margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .header-bar li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.1s;
+    border: none;
+  }
+
+  .header-bar li a:hover {
+    color: orangered;
+  }
+
+  .logo-blog {
+    padding: 0 6rem;
   }
 }
