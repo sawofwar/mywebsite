@@ -18,8 +18,8 @@ article {
   position: relative;
 }
 
-.logo span {
-  color: #e5e5e5;
+.logo-blog span {
+  color: red;
 }
 
 .home {
