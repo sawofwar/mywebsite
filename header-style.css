@@ -65,12 +65,12 @@ h1 a:hover {
   text-decoration: none;
   color: white;
   transition: 0.1s;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
 }
 
 .header-bar li a:hover {
   color: orangered;
-  border-color: orangered;
+  /* border-color: orangered; */
 }
 
 @media (max-width: 600px) {

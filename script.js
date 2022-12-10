@@ -31,5 +31,22 @@ const myProjectsOrange = function () {
   }
 };
 
-folderButton.addEventListener('click', sideBarToggle);
-folderButton.addEventListener('click', myProjectsOrange);
+// folderButton.addEventListener('click', sideBarToggle);
+// folderButton.addEventListener('click', myProjectsOrange);
+
+const showMore = document.querySelector('.show-more');
+const showLess = document.querySelector('.show-less');
+
+showMore.addEventListener('click', function () {
+  document.querySelector('.entry-2').classList.remove('hidden');
+  document.querySelector('.entry-1').classList.remove('hidden');
+  document.querySelector('.show-less-div').classList.remove('hidden');
+  showMore.classList.add('hidden');
+});
+
+showLess.addEventListener('click', function () {
+  document.querySelector('.entry-2').classList.add('hidden');
+  document.querySelector('.entry-1').classList.add('hidden');
+  document.querySelector('.show-less-div').classList.add('hidden');
+  showMore.classList.remove('hidden');
+});

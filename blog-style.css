@@ -12,6 +12,7 @@ footer {
   font-size: 12px;
   text-align: center;
   color: rgb(183, 183, 183);
+  margin: 15px 0;
 }
 
 article {
@@ -45,6 +46,62 @@ article {
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
+}
+
+.show-more-div {
+  display: flex;
+  justify-content: center;
+}
+
+.show-more {
+  background-color: orangered;
+  color: white;
+  z-index: 1;
+  padding: 5px 10px;
+  margin: 20px 0;
+  border: 1px solid black;
+  transition: 0.07s ease;
+}
+
+.show-more:hover {
+  background-color: rgba(255, 68, 0, 0.44);
+  color: rgb(23, 23, 23);
+}
+
+.show-more:active {
+  background-color: rgb(255, 68, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.show-less-div {
+  display: flex;
+  justify-content: center;
+}
+
+.show-less {
+  background-color: orangered;
+  color: white;
+  z-index: 1;
+  padding: 5px 10px;
+  margin: 20px 0;
+  border: 1px solid black;
+  transition: 0.07s ease;
+}
+
+.show-less:hover {
+  background-color: rgba(255, 68, 0, 0.44);
+  color: rgb(23, 23, 23);
+}
+
+.show-less:active {
+  background-color: rgb(255, 68, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.hidden {
+  display: none;
 }
 
 h2 {
