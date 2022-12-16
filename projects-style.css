@@ -81,10 +81,7 @@ img {
   transition: 0.15s ease;
 }
 
-/* img:hover {
-  width: 12.5rem;
-  height: 10.5rem;
-} */
+
 
 .lang-highlight {
   color: orangered;
@@ -94,9 +91,7 @@ img {
   text-align: center;
 }
 
-/* .container-games a {
-  text-decoration: none;
-} */
+
 
 .preview-container {
   margin: 50px 0;
