@@ -4,15 +4,25 @@
   box-sizing: border-box;
 }
 
+/* COLOURS
+MAIN:  #37b24d
+DARK MAIN: #2b8a3e
+GREY:  #343a40
+ACCENT: #F49C37*/
+
 body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
+  color: #343a40;
+  border-bottom: 6px #091c0c solid;
+  min-height: 100vh;
 }
 
 footer {
+  display: none;
   font-size: 12px;
   text-align: center;
-  color: rgb(183, 183, 183);
+  color: #868e96;
 }
 
 /* Main Content */
@@ -48,7 +58,7 @@ p {
 
 .section-two a:link,
 .section-two a:visited {
-  color: orangered;
+  color: #2b8a3e;
   text-decoration: none;
 }
 

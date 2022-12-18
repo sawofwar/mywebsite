@@ -7,9 +7,12 @@
 body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
+  border-bottom: 6px #091c0c solid;
+  min-height: 100vh;
 }
 
 footer {
+  display: none;
   font-size: 12px;
   text-align: center;
   color: rgb(183, 183, 183);
@@ -20,11 +23,13 @@ article {
 }
 
 .logo span {
-  color: purple;
+  color: #eaf3ec;
+  /* color: #9eaeb5; */
+  /* color: #7ebce6; */
 }
 
 .home {
-  border: 1px solid orangered;
+  /* border: 1px solid orangered; */
   padding: 15px;
   position: absolute;
   width: 70px;
@@ -50,7 +55,7 @@ article {
   justify-content: center;
   align-items: center;
   grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 233px 233px 233px;
+  grid-template-rows: 233px 233px;
 }
 
 h2 {

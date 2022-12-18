@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+/* COLOURS
+MAIN:  #37b24d
+DARK MAIN: #2b8a3e
+GREY:  #343a40
+ACCENT: #F49C37*/
+
 header {
   width: 100%;
 }
@@ -13,8 +19,8 @@ body {
 }
 
 h1 {
-  color: white;
-  font-size: 30px;
+  font-size: 36px;
+  /* 30 / 36 / 44 / 52 / 62 */
 }
 
 h1 a {
@@ -24,31 +30,35 @@ h1 a {
 
 h1 a:link {
   text-decoration: none;
-  color: white;
+  color: #95c59f;
 }
 
 h1 a:visited {
   text-decoration: none;
-  color: white;
+  color: #95c59f;
 }
 
 h1 a:hover {
-  color: orangered;
-  /* border: 1px solid orangered; */
+  color: #f49c37;
+  /* border: 1px solid #F49C37; */
 }
 
 .header-bar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 min(100px);
+
   flex-wrap: wrap;
-  background-color: #000000;
-  height: 60px;
+  background-color: #091c0c;
+  height: 65px;
   width: 100%;
 }
 
 .logo span {
-  color: #fca311;
+  color: #eaf3ec;
+  /* color: #9eaeb5; */
+  /* color: #f49c37; */
 }
 
 .header-bar ul {
@@ -64,13 +74,13 @@ h1 a:hover {
 .header-bar li a {
   padding: 10px 20px;
   text-decoration: none;
-  color: white;
+  color: #95c59f;
   transition: 0.1s;
   /* border: 1px solid transparent; */
 }
 
 .header-bar li a:hover {
-  color: orangered;
+  color: #f49c37;
   /* border-color: orangered; */
 }
 

@@ -7,9 +7,11 @@
 body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
+  color: #343a40;
 }
 
 footer {
+  display: none;
   font-size: 12px;
   text-align: center;
   color: rgb(183, 183, 183);
@@ -20,7 +22,8 @@ article {
 }
 
 .logo span {
-  color: #fc4011;
+  color: #eaf3ec;
+  /* color: #9eaeb5; */
 }
 
 .home {
