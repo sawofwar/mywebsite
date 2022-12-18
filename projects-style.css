@@ -63,7 +63,7 @@ h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: inline-block;
   padding-top: 20px;
-  color: orangered;
+  /* color: #091c0c; */
   width: 100%;
   padding-bottom: 25px;
   text-align: center;
@@ -92,10 +92,11 @@ img {
 }
 
 .lang-highlight {
-  color: orangered;
+  color: #091c0c;
 }
 
 .game {
+  font-size: 16px;
   padding: 0;
   text-align: center;
   display: flex;
@@ -111,11 +112,11 @@ img {
 }
 
 .game a:link {
-  color: orangered;
+  color: #091c0c;
 }
 
 .game a:visited {
-  color: orangered;
+  color: #091c0c;
 }
 
 .game-title {
