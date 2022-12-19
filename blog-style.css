@@ -118,8 +118,13 @@ h2 {
 p {
   text-align: justify;
   line-height: 1.5;
+<<<<<<< Updated upstream
   margin-bottom: 10px;
   font-size: 14px;
+=======
+  font-size: 16px;
+  margin-bottom: 8px;
+>>>>>>> Stashed changes
 }
 
 br {

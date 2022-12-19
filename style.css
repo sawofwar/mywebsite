@@ -25,9 +25,44 @@
   color: white;
 } */
 
+.background--1 {
+  width: 100%;
+  /* height: 91vh; */
+  height: 650px;
+  position: absolute;
+  filter: brightness(20%);
+
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0),
+      rgb(9, 28, 12, 0.9) 25%,
+      rgb(9, 28, 12, 0.9) 75%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url('background-pics/background-coding.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* .background--1::before {
+  content: '';
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(1.5px);
+} */
+
 body {
+<<<<<<< Updated upstream
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* text-align: center; */
+=======
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  border-bottom: 6px #091c0c solid;
+  min-height: 100vh;
+>>>>>>> Stashed changes
 }
 
 footer {
@@ -45,10 +80,31 @@ article {
   width: 32.5rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   margin: 0 auto;
   position: relative;
+<<<<<<< Updated upstream
+=======
+  font-size: 16px;
+  color: #ebf7ed;
+  /* / 16 / 18 / 20 / 24 / 30 / */
+}
+
+.home-title {
+  align-self: center;
+  display: block;
+  font-size: 44px;
+  letter-spacing: -1.5px;
+  font-weight: 700;
+  /* 44 / 52 / 62 */
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
+.long-info {
+  margin-top: 48px;
+>>>>>>> Stashed changes
 }
 
 p {
@@ -56,6 +112,7 @@ p {
   text-align: justify;
   line-height: 1.5;
   margin-bottom: 10px;
+  text-align: justify;
 }
 
 .section-one,
