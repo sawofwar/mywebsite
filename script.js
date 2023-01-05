@@ -1,39 +1,30 @@
 'strict only';
 
-// let input = document.querySelector('.input-one');
+// IMPORTING JQUERY
+/*
+const script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
+document.getElementsByTagName('body')[0].appendChild(script);
+*/
 
-// input.addEventListener('keypress', function (event) {
-//   if (event.key === 'Enter') {
-//     document.querySelector('.input-text').textContent = String(input.value);
-//   }
-// });
+// JQUERY IMPORT HTML
+/*
+$(function () {
+  $('.jquery-test').load('jquery.html');
+});
+*/
 
-const folderButton = document.getElementById('folder-button');
-const udemy = document.querySelector('.udemy');
-const udemyList = document.querySelector('.udemy-list');
-const myProjects = document.querySelector('.my-projects');
+// FETCH EXAMPLE
+/*
+fetchPromise.then((response) => {
+  const jsonPromise = response.json();
+  jsonPromise.then((data) => {
+    console.log(data[0].name);
+  });
+});
+*/
 
-const sideBarToggle = function () {
-  if (udemy.classList.contains('hidden')) {
-    udemyList.classList.remove('hidden');
-    udemy.classList.remove('hidden');
-  } else {
-    udemyList.classList.add('hidden');
-    udemy.classList.add('hidden');
-  }
-};
-
-const myProjectsOrange = function () {
-  if (myProjects.classList.contains('orangered')) {
-    myProjects.classList.remove('orangered');
-  } else {
-    myProjects.classList.add('orangered');
-  }
-};
-
-// folderButton.addEventListener('click', sideBarToggle);
-// folderButton.addEventListener('click', myProjectsOrange);
-
+/*
 const showMore = document.querySelector('.show-more');
 const showLess = document.querySelector('.show-less');
 
@@ -50,3 +41,4 @@ showLess.addEventListener('click', function () {
   document.querySelector('.show-less-div').classList.add('hidden');
   showMore.classList.remove('hidden');
 });
+*/

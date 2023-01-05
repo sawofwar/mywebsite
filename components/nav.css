@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+nav {
+  background: black;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  z-index: 1;
+}
+
+/*
+nav {
+  filter: invert(1);
+}
+*/
+
+.logo {
+  height: 48px;
+  width: 130px;
+  object-fit: cover;
+  filter: invert(1);
+  /* justify-self: flex-start; */
+  margin-right: auto;
+  margin-left: 32px;
+}
+
+nav button:last-child {
+  margin-right: 32px;
+}
+
+.nav-btn {
+  font-family: inter;
+  height: 32px;
+  border-radius: 100px;
+  font-size: 14px;
+  padding: 0 12px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transition: 0.15 s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-btn:hover,
+.nav-btn:active {
+  background-color: white;
+  color: black;
+}
+
+.progress-container {
+  background-color: #495057;
+  height: 5px;
+  width: 100vw;
+  display: none;
+}
+
+.progress-bar {
+  background-color: #51cf66;
+  height: 5px;
+  display: none;
+  width: 0%;
+  transition: 0.07s;
+}
