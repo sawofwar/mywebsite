@@ -4,105 +4,155 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vvv's website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="header-style.css" />
-    <!-- <link rel="stylesheet" href="side-bar-style.css"> -->
+    <!-- STYLES FOR NAV AND FOOTER -->
+    <link rel="stylesheet" href="../components/nav.css" />
+    <link rel="stylesheet" href="../components/footer.css" />
+    <link rel="stylesheet" href="../components/projects.css" />
+
+    <title>VVV</title>
   </head>
+
   <body>
+    <!-- CONTAINER FOR NAV IMPORT -->
+    <div class="nav-container"></div>
 
-    <header>
-      <div class="header-bar">
-        <h1 class="logo"><a href="index.html">VVV</a>  <span>STUDIOS</span></h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </div>
-    </header>
+    <div class="grid-container">
+      <img
+        class="big-pic"
+        src="../blog-pics/altumcode-dMUt0X3f59Q-unsplash.jpg"
+        alt=""
+      />
 
-    <div class="container">
+      <div class="heading-subtext">
+        <h1>Hello, my name is Constantine.</h1>
+        <p class="subtext">
+          Aspiring <span>web-developer and QA engineer</span> based in Tbilisi,
+          Georgia.
+        </p>
+      </div>
+
+      <div class="projects-div">
+        <h2 class="projects-heading">Projects</h2>
+        <p class="projects-text">
+          On my programming journey, I have created a few projects — as part of
+          the Udemy courses that I am undertaking and as my own pet projects —
+          which I am happy to share with you on this website. In fact, this
+          website is also a project of mine!
+        </p>
+
+        <!-- PROJECTS CARD -->
+        <div class="projects-card" onclick="window.location='../projects/pig-game/index.html'">
+          <!-- IMAGE -->
+          <img
+            class="projects-card-img"
+            id="pig-game"
+            src="../projects/pig-game-preview.png"
+            alt=""
+          />
+
+          <!-- HEADING -->
+          <h2 class="card-projects-heading">Pig Game</h2>
+          <!-- CARD TEXT -->
+          <p class="projects-card-text">
+            Earn 100 points in total. You can either roll or hold. If you roll
+            one, you lose your current score and it's the other player's turn.
+          </p>
+        </div>
+
+        <!-- PROJECTS CARD -->
+        <div class="projects-card" onclick="window.location='../projects/guess-my-number/index.html'">
+          <!-- IMAGE -->
+          <img
+            class="projects-card-img"
+            id="pig-game"
+            src="../projects/guess-my-number-preview.png"
+            alt=""
+          />
+
+          <!-- HEADING -->
+          <h2 class="card-projects-heading">Guess My Number</h2>
+          <!-- CARD TEXT -->
+          <p class="projects-card-text">
+            Guess a number from 1 to 20. Each time you miss, 1 point is subtracted from the possible score of 20. Good luck!
+          </p>
+        </div>
+
+        <!-- PROJECTS CARD -->
+        <div class="projects-card" onclick="window.location='../projects/html-basic-lang/index.html'">
+          <!-- IMAGE -->
+          <img
+            class="projects-card-img"
+            id="pig-game"
+            src="../projects/html-css.png"
+            alt=""
+          />
+
+          <!-- HEADING -->
+          <h2 class="card-projects-heading">HTML Page</h2>
+          <!-- CARD TEXT -->
+          <p class="projects-card-text">
+           A simple web page about the HTML language. Uses basic HTML and CSS techniques: different types of elements, flexbox, grid, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="languages">
+        <h3>Languages</h3>
+        <p>
+          With a degree in Translation, I am fully proficient in <span class="span-lang">English (C2)</span>
+          and familiar with <span class="span-lang">German (B1)</span>.
+        </p>
+      </div>
+
+      <!-- SOFT SKILLS DIV -->
+      <div class="soft-skills">
+        <h3 class="soft-skills-heading">Soft Skills</h3>
+        <table class="soft-skills-table">
+          <tbody>
+            <tr>
+              <td>&#x2022 Analytical thinking</td>
+              <td>&#x2022 Flexibility</td>
+            </tr>
+            <tr>
+              <td>&#x2022 Communication</td>
+              <td>&#x2022 Team work</td>
+            </tr>
+            <tr>
+              <td>&#x2022 Time management</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="about">
+        <p>My name is Constantine, and I am an aspiring <strong>front-end developer and QA engineer</strong> based in Tbilisi, Georgia.</p>
+        <p>On my programming journey, I have created a few projects, which you can find above. In fact, this website is a project of mine too!</p>
+        <p>The website is regularly updated.</p>
+
+      </div>
       
-<h2 class="home-title">Welcome!</h2>
+      
 
-      <!-- <ul> -->
-        <div class="section-one">
-          <p>
-            This is my slowly growing website. Welcome :) <br> Every now and then, I add here information about me, my hobbies and projects.
-          </p>
-          <p>
-            For now, you can check out the list of some of my favourite bands
-            this year:
-          </p>
-
-          <ul class="fav-bands">
-            <li>
-              <a href="https://open.spotify.com/artist/5UqTO8smerMvxHYA5xsXb6">
-                <img
-                  class="band-pics"
-                  src="band-pics/sonic-youth.jpg"
-                /><br /><span class="band-name">Sonic Youth</span></a
-              >
-            </li>
-
-            <li>
-              <a href="https://open.spotify.com/artist/79S80ZWgVhIPMCHuvl6SkA"
-                ><img class="band-pics" src="band-pics/swans.jpg" /><br /><span
-                  class="band-name"
-                  >Swans</span
-                ></a
-              >
-            </li>
-
-            <li>
-              <a href="https://open.spotify.com/artist/2awB7Ol181cocZcLLNBBAh"
-                ><img
-                  class="band-pics"
-                  src="band-pics/fazerdaze.jpg"
-                /><br /><span class="band-name">Fazerdaze</span></a
-              >
-            </li>
-
-            <li>
-              <a href="https://open.spotify.com/artist/415JrPfN7ukaTu8JV8BLE8"
-                ><img
-                  class="band-pics"
-                  src="band-pics/local-h.jpg"
-                /><br /><span class="band-name">Local H</span></a
-              >
-            </li>
-          </ul>
-          <!-- <hr> -->
-        </div>
-        <div class="section-two">
-          <p>
-            If you're interested in street photography from my travels, you can check out my Instagram
-            <a href="https://www.instagram.com/deepsdogdeepsdog/">here</a>. Sometimes I post random personal stuff in my stories 🙂
-          </p>
-          <p>
-            Since I've been travelling a lot lately, all of my recent photos are from abroad.
-          </p>
-        </div>
-
-        <!-- <div class="see-you">
-          <p>See you later :)</p>
-        </div> -->
-        <!-- <button class="blog" onclick="window.location.href='blog.html'">
-          Blog
-        </button> -->
-      </article>
+      <!-- GRID CONTAINER END -->
     </div>
 
     
-    <script src="script.js"></script>
+    <script src="jquery\jquery-3.6.0.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script class="js" src="../components/scripts/newscript.js"></script>
+    
   </body>
-  <br /><br /><br />
-  <footer>VVV Studios</footer>
+  <footer></footer>
 </html>

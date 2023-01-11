@@ -36,6 +36,7 @@ nav {
   /* justify-self: flex-start; */
   margin-right: auto;
   margin-left: 32px;
+  cursor: pointer;
 }
 
 nav button:last-child {
