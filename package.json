@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "astro": "^1.9.2",
     "bootstrap": "^3.4.1"
   }
 }
