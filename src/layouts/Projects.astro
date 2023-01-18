@@ -18,18 +18,17 @@ import Card from '../components/Card.astro';
 
 <style>
   .projects {
-    /* height: 900px; */
-    /* background-color: #f1f3f5; */
     display: flex;
+    background-color: #f1f3f5;
     flex-direction: column;
     align-items: center;
     gap: 48px;
     margin: 0 auto;
-    height: 130vh;
+    padding-bottom: 80px;
+    overflow-x: hidden;
   }
 
   .projects__heading {
-    /* grid-column: 1 / span 3; */
     text-align: center;
     font-family: Merriweather;
     margin-top: 64px;
@@ -40,14 +39,8 @@ import Card from '../components/Card.astro';
   .projects p {
     font-size: 18px;
     line-height: 2;
-    grid-column: 1 / span 3;
     margin: 0 30px;
   }
-
-  /* #pig-game {
-    height: 200px;
-    object-fit: cover;
-  } */
 
   @media only screen and (max-width: 600px) {
     .projects__heading {

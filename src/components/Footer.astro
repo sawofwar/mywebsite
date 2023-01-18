@@ -1,0 +1,61 @@
+<div class="footer">
+  <form action="https://www.linkedin.com/in/konstantin-frolov-71009b195/">
+    <button class="footer-btn" id="button">LinkedIn</button>
+  </form>
+
+  <form action="https://www.instagram.com/deepsdogdeepsdog/">
+    <button class="footer-btn" id="button">Instagram</button>
+  </form>
+
+  <img src="../components/logo.svg" alt="" class="logo" />
+</div>
+
+<style>
+  .footer {
+    /* background: black; */
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    /* position: absolute; */
+    bottom: 10px;
+    left: 12px;
+    width: 95%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .footer button:first-child {
+    margin-left: 32px;
+  }
+
+  .footer-btn {
+    font-family: inter;
+    height: 32px;
+    font-size: 14px;
+    padding: 0 0;
+    background-color: white;
+    color: #495057;
+    border: none;
+    border-bottom: 1px solid #495057;
+    transition: 0.15 s ease-in-out;
+    cursor: pointer;
+  }
+
+  .footer button:hover,
+  .footer button:active {
+    padding: 0 10px;
+  }
+
+  .footer .logo {
+    height: 48px;
+    width: 130px;
+    object-fit: cover;
+    position: absolute;
+    left: 45%;
+    scale: 60%;
+
+    filter: invert(1) brightness(0.3);
+  }
+</style>
