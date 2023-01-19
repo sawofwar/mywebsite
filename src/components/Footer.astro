@@ -1,24 +1,28 @@
 <div class="footer">
-  <form action="https://www.linkedin.com/in/konstantin-frolov-71009b195/">
-    <button class="footer-btn" id="button">LinkedIn</button>
-  </form>
+  <div class="footer__links">
+    <form action="https://www.linkedin.com/in/konstantin-frolov-71009b195/">
+      <button class="footer-btn" id="button">LinkedIn</button>
+    </form>
 
-  <form action="https://www.instagram.com/deepsdogdeepsdog/">
-    <button class="footer-btn" id="button">Instagram</button>
-  </form>
+    <form action="https://www.instagram.com/deepsdogdeepsdog/">
+      <button class="footer-btn" id="button">Instagram</button>
+    </form>
+
+    <form action="https://github.com/sawofwar">
+      <button class="footer-btn" id="button">GitHub</button>
+    </form>
+  </div>
 
   <img src="../components/logo.svg" alt="" class="logo" />
 </div>
 
 <style>
   .footer {
-    /* background: black; */
     height: 64px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    /* position: absolute; */
+    justify-content: space-between;
+    /* gap: 10px; */
     bottom: 10px;
     left: 12px;
     width: 95%;
@@ -27,7 +31,7 @@
   }
 
   .footer button:first-child {
-    margin-left: 32px;
+    margin-left: 12px;
   }
 
   .footer-btn {
@@ -48,14 +52,16 @@
     padding: 0 10px;
   }
 
+  .footer__links {
+    display: flex;
+  }
+
   .footer .logo {
     height: 48px;
     width: 130px;
     object-fit: cover;
-    position: absolute;
-    left: 45%;
     scale: 60%;
-
     filter: invert(1) brightness(0.3);
+    margin-left: auto;
   }
 </style>

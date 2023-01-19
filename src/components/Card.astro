@@ -1,16 +1,12 @@
 ---
+const { projectName, description, imageLink } = Astro.props;
 ---
 
 <div class="project-card">
-  <img
-    class="project-card__image"
-    src="src/images/pig-game-preview.png"
-    alt=""
-  />
-  <h3 class="project-card__heading">Pig Game</h3>
+  <img class="project-card__image" src={imageLink} alt="" />
+  <h3 class="project-card__heading">{projectName}</h3>
   <p class="project-card__subtext">
-    Earn 100 points in total. You can either roll or hold. If you roll one, you
-    lose your current score and it's the other player's turn.
+    {description}
   </p>
 </div>
 
