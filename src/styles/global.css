@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:wght@400;700&display=swap');
 
+:root {
+  --color-primary: #343a40;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,6 +13,7 @@
 
 body {
   font-family: Inter;
+  color: var(--color-primary);
 }
 
 .container {
