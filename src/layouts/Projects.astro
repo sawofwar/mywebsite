@@ -1,0 +1,84 @@
+---
+import Card from "../components/Card.astro";
+
+const pigGame = {
+  title: "Pig Game",
+  description:
+    "Earn 100 points in total. You can either roll or hold. If you roll one, you lose your current score and it's the other player's turn.",
+  imageLink: "src/images/pig-game-preview.png",
+};
+
+const guessMyNumber = {
+  title: "Guess My Number",
+  description:
+    "Guess a number from 1 to 20. Each time you miss, 1 point is subtracted from the possible score of 20. Good luck!",
+  imageLink: "../src/images/guess-my-number-preview.png",
+};
+
+const astroWebsite = {
+  title: "Astro.JS Website",
+  description:
+    "A simple website made with the new Astro library that I made by following a tutorial.",
+  imageLink: "../images/astro-tutorial.png",
+};
+---
+
+<div class="projects">
+  <h2 class="projects__heading">Projects</h2>
+  <p>
+    On my programming journey, I have created a few projects — as part of the
+    Udemy courses that I am undertaking and as my own pet projects — which I am
+    happy to share with you on this website. In fact, this website is also a
+    project of mine!
+  </p>
+
+  <Card
+    projectName={pigGame.title}
+    description={pigGame.description}
+    imageLink={pigGame.imageLink}
+  />
+  <Card
+    projectName={guessMyNumber.title}
+    description={guessMyNumber.description}
+    imageLink={guessMyNumber.imageLink}
+  />
+  <Card
+    projectName={astroWebsite.title}
+    description={astroWebsite.description}
+    imageLink={astroWebsite.imageLink}
+  />
+</div>
+
+<style>
+  .projects {
+    display: flex;
+    background-color: #f1f3f5;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    overflow-x: hidden;
+  }
+
+  .projects__heading {
+    text-align: center;
+    font-family: Merriweather;
+    margin-top: 64px;
+    margin-bottom: 36px;
+    font-size: 44px;
+  }
+
+  .projects p {
+    font-size: 18px;
+    line-height: 2;
+    margin: 0 30px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .projects__heading {
+      font-size: 30px;
+      letter-spacing: -0.8px;
+    }
+  }
+</style>
