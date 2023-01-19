@@ -11,6 +11,7 @@ import About from "../layouts/About.astro";
 import Footer from "../components/Footer.astro";
 
 import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <!DOCTYPE html>
@@ -28,15 +29,14 @@ import "../styles/global.css";
   <title>VVV Studio</title>
 </head>
 <body>
-  <Navigation />
-  <div class="container">
-    <Hero />
+  <BaseLayout>
+    <div class="container">
+      <Hero />
 
-    <Projects />
-    <Skills />
+      <Projects />
+      <Skills />
 
-    <About />
-  </div>
-
-  <Footer />
+      <About />
+    </div>
+  </BaseLayout>
 </body>
