@@ -1,5 +1,8 @@
 ---
 import Card from "../components/Card.astro";
+import pigGameImg from "../images/pig-game-preview.png";
+import guessMyNumberImg from "../images/guess-my-number-preview.png";
+import astroTutorialImg from "../images/astro-tutorial.png";
 
 const pigGame = {
   title: "Pig Game",
@@ -35,17 +38,17 @@ const astroWebsite = {
   <Card
     projectName={pigGame.title}
     description={pigGame.description}
-    imageLink="src/images/pig-game-preview.png"
+    imageLink={pigGameImg}
   />
   <Card
     projectName={guessMyNumber.title}
     description={guessMyNumber.description}
-    imageLink={guessMyNumber.imageLink}
+    imageLink={guessMyNumberImg}
   />
   <Card
     projectName={astroWebsite.title}
     description={astroWebsite.description}
-    imageLink="src/images/astro-tutorial.png"
+    imageLink={astroTutorialImg}
   />
 </div>
 
