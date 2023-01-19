@@ -26,16 +26,13 @@ import logo from "../images/logo.svg";
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* gap: 10px; */
+    gap: 40px;
+
     bottom: 10px;
     left: 12px;
     width: 95%;
     margin: 0;
     overflow-x: hidden;
-  }
-
-  .footer button:first-child {
-    margin-left: 12px;
   }
 
   .footer-btn {
@@ -58,14 +55,19 @@ import logo from "../images/logo.svg";
 
   .footer__links {
     display: flex;
+    gap: 10px;
+  }
+
+  .footer__links:first-child {
+    margin-left: 32px;
   }
 
   .footer .logo {
     height: 48px;
     width: 130px;
     object-fit: cover;
-    scale: 60%;
+    scale: 100%;
     filter: invert(1) brightness(0.3);
-    margin-left: auto;
+    margin-left: 32px;
   }
 </style>
