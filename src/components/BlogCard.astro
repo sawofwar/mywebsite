@@ -1,5 +1,5 @@
 ---
-const { blogTitle, src } = Astro.props;
+const { blogTitle, src, blogText } = Astro.props;
 ---
 
 <div class="blog-card">
@@ -12,8 +12,7 @@ const { blogTitle, src } = Astro.props;
 
   <h3 class="blog__card__heading">{blogTitle}</h3>
   <p>
-    Waiting for our car so we can go to Antalya. Now I'm spread over one more
-    city.
+    {blogText}
   </p>
 </div>
 

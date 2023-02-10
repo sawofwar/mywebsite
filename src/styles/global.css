@@ -14,6 +14,7 @@
 body {
   font-family: Inter;
   color: var(--color-primary);
+  background-color: #f1f3f5;
 }
 
 .container {
