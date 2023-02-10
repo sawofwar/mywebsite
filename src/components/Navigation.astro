@@ -4,18 +4,9 @@ import logo from "../images/logo.svg";
 
 <div class="over">
   <nav>
-    <img
-      src={logo}
-      alt=""
-      class="logo"
-      onclick="window.location='../index.html'"
-    />
-    <button class="nav-btn" onclick="window.location='../index.html'">
-      Home
-    </button>
-    <button class="nav-btn" onclick="window.location='../blog.html'"
-      >Blog</button
-    >
+    <img src={logo} alt="" class="logo" onclick="window.location='/'" />
+    <button class="nav-btn" onclick="window.location='/'"> Home</button>
+    <button class="nav-btn" onclick="window.location='/blog'">Blog</button>
   </nav>
 </div>
 <!-- <div class="progress-container" id="progress-container">
@@ -48,6 +39,11 @@ import logo from "../images/logo.svg";
     margin-right: auto;
     margin-left: 32px;
     cursor: pointer;
+  }
+
+  .logo:hover,
+  .logo:focus {
+    filter: invert(1) opacity(0.8);
   }
 
   nav button:last-child {

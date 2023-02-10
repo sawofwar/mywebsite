@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BlogCard from "../components/BlogCard.astro";
+---
+
+<BaseLayout>
+  <div class="blog-container">
+    <BlogCard
+      blogTitle="Down and out in Tbilisi"
+      src="src/blog-pics/10-12 pic-1.jpg"
+    />
+    <BlogCard blogTitle="See you soon" src="src/blog-pics/4-12 pic-1.jpg" />
+    <BlogCard
+      blogTitle="Lots and lots of rain ☔"
+      src="src/blog-pics/31-11 pic-1.jpg"
+    />
+  </div>
+</BaseLayout>
+
+<style>
+  .blog-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    gap: 50px;
+    margin: 100px auto;
+  }
+</style>

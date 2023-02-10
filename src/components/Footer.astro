@@ -17,7 +17,7 @@ import logo from "../images/logo.svg";
     </form>
   </div>
 
-  <img src={logo} alt="" class="logo" />
+  <img src={logo} alt="" class="logo" onclick="window.location='/'" />
 </div>
 
 <style>
@@ -62,12 +62,17 @@ import logo from "../images/logo.svg";
     margin-left: 32px;
   }
 
-  .footer .logo {
-    height: 48px;
-    width: 130px;
+  .logo {
+    height: calc(48px * 0.7);
+    width: calc(130px * 0.7);
     object-fit: cover;
-    scale: 100%;
     filter: invert(1) brightness(0.3);
     margin-left: 32px;
+    cursor: pointer;
+  }
+
+  .logo:hover,
+  .logo:focus {
+    filter: opacity(0.8);
   }
 </style>
