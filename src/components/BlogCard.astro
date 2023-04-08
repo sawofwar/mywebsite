@@ -1,19 +1,21 @@
 ---
-const { blogTitle, src, blogText } = Astro.props;
+const { blogTitle, src, blogText, url, blogDate } = Astro.props;
 ---
 
 <div class="blog-card">
-  <img src={src} alt="" />
+  <a href={url}>
+    <img src={src} alt="" />
 
-  <div class="blog-card__info">
-    <p class="blog-card__info__type">Article</p>
-    <p class="blog-card__info__date">3.12.22</p>
-  </div>
+    <div class="blog-card__info">
+      <p class="blog-card__info__type">Article</p>
+      <p class="blog-card__info__date">{blogDate}</p>
+    </div>
 
-  <h3 class="blog__card__heading">{blogTitle}</h3>
-  <p>
-    {blogText}
-  </p>
+    <h3 class="blog__card__heading">{blogTitle}</h3>
+    <p>
+      {blogText}
+    </p>
+  </a>
 </div>
 
 <style>
@@ -44,5 +46,11 @@ const { blogTitle, src, blogText } = Astro.props;
     width: 300px;
     height: 300px;
     object-fit: cover;
+  }
+
+  a,
+  a:visited {
+    color: var(--color-primary);
+    text-decoration: none;
   }
 </style>
