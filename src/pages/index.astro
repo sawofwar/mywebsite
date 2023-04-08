@@ -1,0 +1,26 @@
+---
+export interface Props {
+  title: string;
+}
+
+import Navigation from "../components/Navigation.astro";
+import Hero from "../layouts/Hero.astro";
+import Projects from "../layouts/Projects.astro";
+import Skills from "../layouts/Skills.astro";
+import About from "../layouts/About.astro";
+import Footer from "../components/Footer.astro";
+
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <div class="container">
+    <Hero />
+
+    <Projects />
+    <Skills />
+
+    <About />
+  </div>
+</BaseLayout>

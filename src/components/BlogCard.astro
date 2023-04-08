@@ -1,0 +1,56 @@
+---
+const { blogTitle, src, blogText, url, blogDate } = Astro.props;
+---
+
+<div class="blog-card">
+  <a href={url}>
+    <img src={src} alt="" />
+
+    <div class="blog-card__info">
+      <p class="blog-card__info__type">Article</p>
+      <p class="blog-card__info__date">{blogDate}</p>
+    </div>
+
+    <h3 class="blog__card__heading">{blogTitle}</h3>
+    <p>
+      {blogText}
+    </p>
+  </a>
+</div>
+
+<style>
+  .blog-card {
+    width: 300px;
+    padding-bottom: 16px;
+    cursor: pointer;
+  }
+
+  .blog-card__info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--color-primary);
+  }
+
+  .blog-card h3 {
+    margin-top: 16px;
+    font-family: Merriweather;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  a,
+  a:visited {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+</style>

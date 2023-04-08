@@ -1,0 +1,97 @@
+---
+import Card from "../components/Card.astro";
+import pigGameImg from "../images/pig-game-preview.png";
+import guessMyNumberImg from "../images/guess-my-number-preview.png";
+import astroTutorialImg from "../images/astro-tutorial.png";
+
+const pigGame = {
+  title: "Pig Game",
+  description:
+    "Earn 100 points in total. You can either roll or hold. If you roll one, you lose your current score and it's the other player's turn.",
+  imageLink: "src/images/pig-game-preview.png",
+};
+
+const guessMyNumber = {
+  title: "Guess My Number",
+  description:
+    "Guess a number from 1 to 20. Each time you miss, 1 point is subtracted from the possible score of 20. Good luck!",
+  imageLink: "../images/guess-my-number-preview.png",
+};
+
+const astroWebsite = {
+  title: "Astro.JS Website",
+  description:
+    "A simple website made with the new Astro library that I made by following a tutorial.",
+  imageLink: "../images/astro-tutorial.png",
+};
+---
+
+<div class="projects">
+  <h2 class="projects__heading">Projects</h2>
+  <p>
+    On my programming journey, I have created a few projects — as part of the
+    Udemy courses that I am undertaking and as my own pet projects — which I am
+    happy to share with you on this website. In fact, this website is also a
+    project of mine!
+  </p>
+
+  <Card
+    projectName={pigGame.title}
+    description={pigGame.description}
+    imageLink={pigGameImg}
+  />
+  <Card
+    projectName={guessMyNumber.title}
+    description={guessMyNumber.description}
+    imageLink={guessMyNumberImg}
+  />
+  <Card
+    projectName={astroWebsite.title}
+    description={astroWebsite.description}
+    imageLink={astroTutorialImg}
+  />
+</div>
+
+<style>
+  .projects {
+    display: grid;
+
+    width: 80vw;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-rows: repeat(auto-fit, minmax(300px, 1fr)); */
+
+    /* background-color: red; */
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    margin: 0 auto;
+    /* margin-top: 64px; */
+    padding-bottom: 80px;
+    overflow-x: hidden;
+  }
+
+  .projects__heading {
+    text-align: center;
+    font-family: Merriweather;
+    padding-top: 24px;
+    margin-top: 64px;
+    font-size: 44px;
+    grid-row: 1;
+    grid-column: 1 / -1;
+  }
+
+  .projects p {
+    font-size: 18px;
+    line-height: 2;
+    margin: 0 30px;
+    grid-row: 2;
+    grid-column: 1 / -1;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .projects__heading {
+      font-size: 30px;
+      letter-spacing: -0.8px;
+    }
+  }
+</style>
